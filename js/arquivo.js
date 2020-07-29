@@ -57,3 +57,67 @@ function calculadora(numero){
     conta++;
 }
 //------------
+//Matris
+function matriz(parametro){
+    var frutas = ["Laranja","Pera","Banana"];
+    switch(parametro){
+        case "m":
+            document.getElementById("mostramatriz").innerHTML = frutas; 
+        break;
+        case "um":
+            document.getElementById("mostramatriz").innerHTML = frutas[0];
+        break;
+        case "dois":
+            document.getElementById("mostramatriz").innerHTML = frutas[1];
+        break;
+        case "tres":
+            document.getElementById("mostramatriz").innerHTML = frutas[2];
+        break;
+    }
+}
+//Objeto
+function jogo(parametro){
+    var niveis = {
+        um : "Extremamente fácil",
+        dois: "Fácil",
+        tres: "Razoavel",
+        quatro: "Médio",
+        cinco: "Difícil",
+    }
+    switch(parametro){
+        case 1:
+            document.getElementById("mostraNivel").innerHTML = niveis.um;
+        break;
+        case 2:
+            document.getElementById("mostraNivel").innerHTML = niveis.dois;
+        break;
+        case 3:
+            document.getElementById("mostraNivel").innerHTML = niveis.tres;
+        break;
+        case 4:
+            document.getElementById("mostraNivel").innerHTML = niveis.quatro;
+        break;
+        case 5:
+            document.getElementById("mostraNivel").innerHTML = niveis.cinco;
+        break;
+    }
+}
+function exemplodereturn(p1, p2){
+    document.getElementById("retornou").innerHTML = retornando(p1, p2);
+}
+function retornando(p1, p2){
+    return p1 + p2;
+}
+function mostradataehora(){
+    document.getElementById("date").innerHTML=Date();
+}
+function posicaodefruta(parametro){
+    var textoFruta = "Localizando a palavra fruta dentro deste texto";
+    var pos = textoFruta.indexOf("fruta");
+    if(parametro == 'um'){
+        document.getElementById("mostrandoposicao").innerHTML='Está na posição '+pos;
+    }if(parametro == 'dois'){
+        document.getElementById("mostrandoposicao").innerHTML=textoFruta;
+    }
+}
+//W3schools - javascript - parei no JS String methods

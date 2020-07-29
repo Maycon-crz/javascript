@@ -20,7 +20,7 @@
 				<p id='atribuiPorinnerHTML'></p>
 				<button type='button' onclick='alertando();'>Alertar</button>
 				<button type="button" onclick='escrevenoconsole();'>Console.log</button>
-				<button type="button" onclick='imprimepagina();'>Imprime está pagina</button>
+				<button type="button" onclick='imprimepagina();'>Imprime esta pagina</button>
 				<button type="button" onclick='variavel();'>Alerta variavel</button>
 			</div>
 		</div>
@@ -59,6 +59,51 @@
 				</ul>				
 			</div>
 			<div class='col-2 text-center'></div>
+		</div>
+		<div class='row'>
+			<div class='col-12 text-center'>
+				<ul class='m-0 p-0'>
+					<li><button type="button" class='btn btn-warning mt-4 mb-1' onclick='matriz("m");'>Mostra matriz fruta</button>
+						<button type="button" class='btn btn-success mt-4 mb-1' onclick='matriz("um");'>Primeira fruta</button>
+						<button type="button" class='btn btn-danger mt-4 mb-1' onclick='matriz("dois");'>Segunda fruta</button>
+						<button type="button" class='btn btn-primary mt-4 mb-1' onclick='matriz("tres");'>Terceira fruta</button>
+					</li>
+					<li><p class='text-center border border-success' id='mostramatriz'></p></li>
+				</ul>								
+			</div>				
+		</div>
+		<div class='row mt-3 border border-success'>
+			<div class='col-12 text-center'>
+				<ul class='m-0 p-0'>
+					<li><h3>Objeto Níveis</h3></li>
+					<li>
+						<button type="button" class='btn btn-secondary' onclick='jogo(1);'>Nivel 1</button>
+						<button type="button" class='btn btn-primary' onclick='jogo(2);'>Nivel 2</button>
+						<button type="button" class='btn btn-success' onclick='jogo(3);'>Nivel 3</button>
+						<button type="button" class='btn btn-warning' onclick='jogo(4);'>Nivel 4</button>
+						<button type="button" class='btn btn-danger' onclick='jogo(5);'>Nivel 5</button>
+					</li>
+					<li><h2 id='mostraNivel'></h2></li>
+				</ul>
+			</div>
+		</div>
+		<div class='row mt-3 border border-success'>
+			<div class='col-12 text-center'>
+				<ul class='m-0 p-0'>
+					<li><button type="button" class='btn btn-success' onclick='exemplodereturn(2, 3);'>Exemplo Return Soma 2+3</button></li>
+					<li><h2 id='retornou'></h2></li>
+				</ul>
+				<ul class='m-0 p-0'>
+					<li><button type="button" class='btn btn-success' onclick='mostradataehora();'>Que horas são?</button></li>
+					<li><h2 id='date'></h2></li>
+				</ul>
+				<ul class='m-0 p-0'>
+					<li><p id='mostrandoposicao'>Localizando a palavra fruta dentro deste texto</p></li>	
+					<li><button type="button" class='btn btn-success' onclick="posicaodefruta('um');">Posição de fruta</button>
+						<button type="button" class='btn btn-warning' onclick="posicaodefruta('dois');">Texto</button>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>
