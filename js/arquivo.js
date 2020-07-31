@@ -112,12 +112,40 @@ function mostradataehora(){
     document.getElementById("date").innerHTML=Date();
 }
 function posicaodefruta(parametro){
-    var textoFruta = "Localizando a palavra fruta dentro deste texto";
+    var textoFruta = "LOCALIZANDO a palavra fruta, dentro deste TEXTO, 1,2,3";
     var pos = textoFruta.indexOf("fruta");
-    if(parametro == 'um'){
-        document.getElementById("mostrandoposicao").innerHTML='Está na posição '+pos;
-    }if(parametro == 'dois'){
-        document.getElementById("mostrandoposicao").innerHTML=textoFruta;
+    switch(parametro){
+        case 'um':
+            document.getElementById("mostrandoposicao").innerHTML='Está na posição '+pos;
+        break;
+        case 'dois':
+            document.getElementById("mostrandoposicao").innerHTML=textoFruta;
+        break;
+        case 'naotem':
+            var naotempalavra = textoFruta.indexOf("nao");
+            document.getElementById("mostrandoposicao").innerHTML="Quando o indexOf() não encontra retorna: "+naotempalavra;
+        break;
+        case 'pera':
+            var textoFrutaMudado = textoFruta.replace("fruta","Pera");
+            document.getElementById("mostrandoposicao").innerHTML=textoFrutaMudado;
+        break;
+        case 'minusculo':
+            document.getElementById("mostrandoposicao").innerHTML=textoFruta.toLowerCase();
+        break;
+        // textoFruta.trim(); Tira espaços em branco no começo e no fim
+        case 'antesdavirgula':
+            var separa = textoFruta.split(",");
+            document.getElementById("mostrandoposicao").innerHTML=separa[0];
+        break;
+        case 'depoisdavirgula':
+            var separa = textoFruta.split(",");
+            document.getElementById("mostrandoposicao").innerHTML=separa[1];
+        break;
+        case 'stringnumerosoma':
+            var separa = textoFruta.split(",");
+            var separaEsoma=parseInt(separa[2])+parseInt(separa[3])+parseInt(separa[4]);
+            document.getElementById("mostrandoposicao").innerHTML=separaEsoma;
+        break;
     }
 }
-//W3schools - javascript - parei no JS String methods
+//W3schools - javascript - parei no JS Number methods

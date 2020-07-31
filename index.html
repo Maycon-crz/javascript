@@ -98,9 +98,18 @@
 					<li><h2 id='date'></h2></li>
 				</ul>
 				<ul class='m-0 p-0'>
-					<li><p id='mostrandoposicao'>Localizando a palavra fruta dentro deste texto</p></li>	
-					<li><button type="button" class='btn btn-success' onclick="posicaodefruta('um');">Posição de fruta</button>
-						<button type="button" class='btn btn-warning' onclick="posicaodefruta('dois');">Texto</button>
+					<li><p id='mostrandoposicao'>LOCALIZANDO a palavra fruta, dentro deste TEXTO, 1,2,3</p></li>	
+					<li>
+						<button type="button" class='btn btn-success' onclick="posicaodefruta('um');">Posição de fruta</button>
+						<button type="button" class='btn btn-danger' onclick="posicaodefruta('naotem');">Palavra que não tem no texo</button>
+						<button type="button" class='btn btn-primary' onclick="posicaodefruta('pera');">Trocar palavra (fruta) por (Pera)</button>
+						<button type="button" class='btn btn-secondary' onclick="posicaodefruta('minusculo');">Transforma o texto em minúsculo</button>
+						<button type="button" class='btn btn-warning' onclick="posicaodefruta('dois');">Texto</button>						
+					</li>
+					<li>
+						<button type="button" class='btn btn-warning' onclick="posicaodefruta('antesdavirgula');">Pega só palavras antes da virgula</button>
+						<button type="button" class='btn btn-success' onclick="posicaodefruta('depoisdavirgula');">Pega só palavras depois da virgula</button>
+						<button type="button" class='btn btn-success' onclick="posicaodefruta('stringnumerosoma');">Transforma final do texto/string em números e soma eles</button>
 					</li>
 				</ul>
 			</div>
