@@ -148,4 +148,26 @@ function posicaodefruta(parametro){
         break;
     }
 }
+function carros(parametro){
+    var carros = ['Fusca', 'Chevette', 'Opala'];    
+    switch(parametro){
+        case 'maverick':
+            carros[0] = "Maverick";
+            document.getElementById("arraycarros").innerHTML=carros;
+        break;
+        case 'ultimo':        
+            var ultimocarro = carros[carros.length - 1];
+            document.getElementById("arraycarros").innerHTML=ultimocarro;
+        break;
+        case 'lista':
+            var qtdcarros = carros.length;
+            var listando = "<ul>";
+            for(c = 0;c < qtdcarros;c++){//Executa enquanto c é menor que qtdcarros
+                listando +="<li>"+carros[c]+"</li>";
+            }
+            listando += "</ul>";
+            document.getElementById("arraycarros").innerHTML=listando;
+        break;
+    }
+}
 //W3schools - javascript - parei no JS Number methods
