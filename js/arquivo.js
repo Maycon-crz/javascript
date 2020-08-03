@@ -177,6 +177,34 @@ function carros(parametro){
                 listando += "<li>"+value+"</li>";
             }
         break;
+        case 'addcamaro':
+            carros.push("Camaro");
+            document.getElementById("arraycarros").innerHTML=carros;
+        break;
+        case '350Z':            
+            carros[carros.length] = "Nisan350Z";
+            document.getElementById("arraycarros").innerHTML=carros;
+        break;
     }
 }
-//W3schools - javascript - parei no JS Number methods
+function indexes(parametro){
+    // var vindexes = [];
+    // vindexes['um'] = "Nomeando";
+    // vindexes['dois'] = "os";
+    // vindexes['tres'] = "indexes";
+    // vindexes['quatro'] = "da";
+    // vindexes['cinco'] = "array";
+    // switch(parametro){
+    //     case 'renomeando':
+    //         vindexes['um'] = "Renomeando";
+    //         var qtdvindexes = vindexes.length;
+    //         var lvindexes = "<ul>";
+    //         for(c=0;c < qtdvindexes;c++){
+    //             lvindexes += "<li>"+vindexes[c]+"</li>";
+    //         }
+    //         lvindexes += "</ul>";
+    //         document.getElementById("mostraindexes").innerHTML=vindexes.toString();
+    //     break;
+    // }
+}
+//W3schools - javascript - parei no JS Array methods
