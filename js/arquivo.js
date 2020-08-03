@@ -168,6 +168,15 @@ function carros(parametro){
             listando += "</ul>";
             document.getElementById("arraycarros").innerHTML=listando;
         break;
+        case 'listaforeach':
+            var listando = "<ul>";
+                carros.forEach(funlista);
+            listando += "</ul>";
+            document.getElementById("arraycarros").innerHTML=listando;
+            function funlista(value){
+                listando += "<li>"+value+"</li>";
+            }
+        break;
     }
 }
 //W3schools - javascript - parei no JS Number methods
