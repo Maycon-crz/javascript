@@ -184,19 +184,97 @@ function carros(parametro){
         case '350Z':            
             carros[carros.length] = "Nisan350Z";
             document.getElementById("arraycarros").innerHTML=carros;
-        break;
+        break;        
     }
 }
 function indexes(parametro){
     var vindexes = {um:"Nomeando", dois:"os", tres:"indexes", quatro:"da", cinco:"array"};    
-    var v2indexes = ["Trasformando", "array", "em", "string"];    
+    var v2indexes = ["Trasformando", "array", "em", "string"];   
+    var v3indexes = ["Arroz", "Carne", "Batatas"];
+    var v4indexes = ["Faca", "Garfo", "Colher", "Prato"];
+    var v5indexes = [1, 5, 3, 2, 4];
+    var v6indexes = [
+        {tipo:"Fruta", nome:"Maçã"},
+        {tipo:"Talher", nome:"Faca"},
+        {tipo:"Acao", nome:"Descascar"}
+    ];   
     switch(parametro){
-        case 'index':         
+        case 'indexstring':         
             document.getElementById("mostraindexes").innerHTML=vindexes['um'];          
         break;
-        case 'transformandoemstring':
-                // document.getElementById("mostraindexes").innerHTML=vindexes['um']; 
+        case 'remover':
+            v2indexes.pop();
+            document.getElementById("mostraindexes").innerHTML=v2indexes;
         break;
+        case 'ultimo':            
+            document.getElementById("mostraindexes").innerHTML=v2indexes.pop();
+        break;
+        case 'primeiro':
+            v2indexes.shift();
+            document.getElementById("mostraindexes").innerHTML=v2indexes;
+        break;    
+        case 'addelemento':            
+            v2indexes.unshift("e");
+            v2indexes.unshift("Aprendendo");
+            document.getElementById("mostraindexes").innerHTML=v2indexes;
+        break;    
+        case 'deleta':
+            delete v2indexes[0];
+            document.getElementById("mostraindexes").innerHTML=v2indexes;
+        break;    
+        case 'concatena':
+            var concatenado = v2indexes.concat(c, v4indexes);
+            document.getElementById("mostraindexes").innerHTML=concatenado;
+        break;x 
+        case 'apartir':
+            var partindo = v4indexes.slice(2);
+            c
+        break;  
+        case 'transformaemstring':
+            document.getElementById("mostraindexes").innerHTML=v4indexes.toString();
+        break;  
+        case 'ordemalfabetica':
+            document.getElementById("mostraindexes").innerHTML=v3indexes.sort();
+        break;  
+        case 'crescente':
+            v5indexes.sort(function(a, b){return a - b});
+            document.getElementById("mostraindexes").innerHTML=v5indexes;
+        break;  
+        case 'decrescente':
+            v5indexes.sort(function(a, b){return b - a});
+            document.getElementById("mostraindexes").innerHTML=v5indexes;
+        break;  
+        case 'aleatorea':
+            //Da para usar essa para fazer uma nova implementação no PizzaChosen!
+            v5indexes.sort(function(a, b){return 0.5 - Math.random()});
+            document.getElementById("mostraindexes").innerHTML=v5indexes;
+        break;  
+        case 'maiorvalor':
+            v5indexes.sort(function(a, b){return b - a});
+            var mvalor = v5indexes[0]
+            document.getElementById("mostraindexes").innerHTML=mvalor;
+        break;  
+        case 'matrizComObjetos':
+            document.getElementById("mostraindexes").innerHTML=
+                "Eu estou tendo uma "+v6indexes[2].tipo+" de "+v6indexes[2].nome+" um(a) "+v6indexes[0].tipo+" de nome "+v6indexes[0].nome+" com um(a) "+
+                v6indexes[1].tipo+" de nome "+v6indexes[1].nome
+            ;
+        break;  
+        case 'maisvelhomaisnovo':
+            var v7indexes = [
+                {nome:"Pedrinho", idade:15},
+                {nome:"Juninho", idade:14},
+                {nome:"Leandro", idade:18}
+            ];
+            v7indexes.sort(function(a, b){return b.idade - a.idade});
+            document.getElementById("mostraindexes").innerHTML=
+                v7indexes[0].nome+" "+v7indexes[0].idade+" - "+
+                v7indexes[1].nome+" "+v7indexes[1].idade+" - "+
+                v7indexes[2].nome+" "+v7indexes[2].idade
+            ;
+        break;  
+        // case :
+        // break;  
     }
 }
-//W3schools - javascript - parei no JS Array methods
+//W3schools - javascript - parei no 

@@ -125,11 +125,39 @@
 						<button type="button" class='btn btn-warning' onclick="carros('350Z');">Inclui 350Z na array po lenght</button>
 					</li>
 					<li>
-						<p id='mostraindexes'>Nomeando,os,indexes,da,array</p>
+						<h3><p id='mostraindexes'>Matriz1: "Nomeando","os","indexes","da","array"</p></h3>
+						<p>Matriz2: "Trasformando","array","em","string"</p>
+						<p>Matriz3: "Arroz", "Carne", "Batatas"</p>
+						<p>Matriz4: "Faca", "Garfo", "Colher", "Prato"</p>
+						<p>Matriz5: [1, 5, 3, 2, 4, 5]</p>
+						<p>Matriz6: [{tipo:"Fruta", nome:"Maçã"},{tipo:"Talher", nome:"Faca"},{tipo:"Acao", nome:"Descascar"}]</p>
+						<p>Matriz7: [{nome:"Pedrinho", idade:15},{nome:"Juninho", idade:14},{nome:"Leandro", idade:18}]</p>
 					</li>
 					<li>
-						<button type="button" class='btn btn-danger' onclick="indexes('indexstring');">String como Index</button>
-						<button type="button" class='btn btn-danger' onclick="indexes('transformandoemstring');">Troca Nomeando por Renomeando no index ['um']</button>
+						<button type="button" class='btn btn-danger' onclick="indexes('indexstring');">String como Index array1</button>						
+						<button type="button" class='btn btn-danger' onclick="indexes('remover');">Remover o último elemento da array2</button>
+						<button type="button" class='btn btn-danger' onclick="indexes('ultimo');">Pega o último elemento da array2</button>
+						<button type="button" class='btn btn-danger' onclick="indexes('primeiro');">Remove o primeiro elemeto da Matriz2</button>
+					</li>
+					<li>
+						<button type="button" class='btn btn-primary' onclick="indexes('addelemento');">Add 2 elemetos no inicio da Matriz2</button>
+						<button type="button" class='btn btn-primary' onclick="indexes('concatena');">Concatena Matriz2 e Matriz3</button>
+						<button type="button" class='btn btn-primary' onclick="indexes('apartir');">Elementos da  Matriz4 apartir do 3 elemento</button>
+						<button type="button" class='btn btn-primary' onclick="indexes('transformaemstring');">Transforma Matriz4 em string</button>
+					</li>
+					<li>
+						<button type="button" class='btn btn-secondary' onclick="indexes('transformaemstring');">Transforma Matriz4 em string</button>
+						<button type="button" class='btn btn-secondary' onclick="indexes('ordemalfabetica');">Mostra Matriz3 em ordem alfabética</button>
+						<button type="button" class='btn btn-secondary' onclick="indexes('crescente');">Mostra Matriz5 em ordem crescente</button>
+					</li>
+					<li>
+						<button type="button" class='btn btn-success' onclick="indexes('decrescente');">Mostra Matriz5 em ordem decrescente</button>
+						<button type="button" class='btn btn-success' onclick="indexes('aleatorea');">Mostra Matriz5 em ordem Aleatórea</button>
+						<button type="button" class='btn btn-success' onclick="indexes('maiorvalor');">Elemento com valor maior da Matriz5</button>
+					</li>
+					<li>
+						<button type="button" class='btn btn-warning' onclick="indexes('matrizComObjetos');">Lista matriz com mais de 1 objeto - matriz6</button>
+						<button type="button" class='btn btn-warning' onclick="indexes('maisvelhomaisnovo');">Lista matriz6 do mais velho para o mais novo</button>
 					</li>
 				</ul>
 			</div>
