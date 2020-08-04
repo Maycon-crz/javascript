@@ -273,6 +273,20 @@ function indexes(parametro){
                 v7indexes[2].nome+" "+v7indexes[2].idade
             ;
         break;  
+        case 'retornaoutraarray':
+            var maiores3 = v5indexes.filter(funcfiltra);
+            document.getElementById("mostraindexes").innerHTML=maiores3;
+            function funcfiltra(value){
+                return value > 3;
+            }
+        break;  
+        case 'somamatriz5':
+            var somandomatriz5 = v5indexes.reduce(funcsomatudo);
+            document.getElementById("mostraindexes").innerHTML=somandomatriz5;
+            function funcsomatudo(total, value, index, array){
+                return total + value;
+            }
+        break;  
         // case :
         // break;  
     }
