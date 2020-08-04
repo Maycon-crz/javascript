@@ -188,23 +188,15 @@ function carros(parametro){
     }
 }
 function indexes(parametro){
-    // var vindexes = [];
-    // vindexes['um'] = "Nomeando";
-    // vindexes['dois'] = "os";
-    // vindexes['tres'] = "indexes";
-    // vindexes['quatro'] = "da";
-    // vindexes['cinco'] = "array";
-    // switch(parametro){
-    //     case 'renomeando':
-    //         vindexes['um'] = "Renomeando";
-    //         var qtdvindexes = vindexes.length;
-    //         var lvindexes = "<ul>";
-    //         for(c=0;c < qtdvindexes;c++){
-    //             lvindexes += "<li>"+vindexes[c]+"</li>";
-    //         }
-    //         lvindexes += "</ul>";
-    //         document.getElementById("mostraindexes").innerHTML=vindexes.toString();
-    //     break;
-    // }
+    var vindexes = {um:"Nomeando", dois:"os", tres:"indexes", quatro:"da", cinco:"array"};    
+    var v2indexes = ["Trasformando", "array", "em", "string"];    
+    switch(parametro){
+        case 'index':         
+            document.getElementById("mostraindexes").innerHTML=vindexes['um'];          
+        break;
+        case 'transformandoemstring':
+                // document.getElementById("mostraindexes").innerHTML=vindexes['um']; 
+        break;
+    }
 }
 //W3schools - javascript - parei no JS Array methods
