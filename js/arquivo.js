@@ -291,4 +291,4 @@ function indexes(parametro){
         // break;  
     }
 }
-//W3schools - javascript - parei no 
+//W3schools - javascript - parei no js Dates
