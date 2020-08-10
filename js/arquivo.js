@@ -3,7 +3,7 @@ function paragrafoinnerHTML(){
     document.getElementById("atribuiPorinnerHTML").innerHTML ="Chamando função com (onclick) e atribuindo texto por innerHTML = '...'";
 };
 function alertando(){
-    window.alert("Bora lá");
+    window.alert("Bora lá aprender");
 }
 function escrevenoconsole(){
     console.log("Reaprendendo javascript puro!");
